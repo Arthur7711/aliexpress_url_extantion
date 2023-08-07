@@ -1,10 +1,22 @@
 {
-  "manifest_version": 2,
-  "name": "Испарвляет не правильные ссылки на AliExpress",
+  "manifest_version": 3, 
+  "name": "Исправитель ссылок на Aliexpress",
   "version": "1.0",
-  "description": "Испарвляет не правильные ссылки на AliExpress",
-  "icon": {
+  "description": "Исправляет не правильные ссылки на Aliexpress",
+  "icons": {
     "128": "128.png"
   },
-  "content_scripts":""
+  "content_scripts": [
+    {
+      "matches": [
+        "https://aliexpress.ru/*",
+        "https://best.aliexpress.ru/*",
+        "https://aliexpress.com/*",
+        "https://hz.aliexpress.com/*",
+        "https://ru.aliexpress.com/*",
+        "https://*.aliexpress.com/*"
+      ],
+      "js": ["app.js"]
+    }
+  ]
 }
