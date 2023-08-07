@@ -1,0 +1,10 @@
+{
+  "manifest_version": 2,
+  "name": "Испарвляет не правильные ссылки на AliExpress",
+  "version": "1.0",
+  "description": "Испарвляет не правильные ссылки на AliExpress",
+  "icon": {
+    "128": "128.png"
+  },
+  "content_scripts":""
+}
